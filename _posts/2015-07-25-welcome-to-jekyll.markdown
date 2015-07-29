@@ -3,8 +3,12 @@ layout: post
 title:  "Welcome to Jekyll!!!"
 date:   2015-07-25 19:59:17
 categories: jekyll update
-image: "http://samratcliffe.github.io/images/test.jpg"
+image: "/images/test.jpg"
 ---
+
+<iframe height='268' scrolling='no' src='//codepen.io/samratcliffe/embed/JdeWLr/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/samratcliffe/pen/JdeWLr/'>Photorealistic CSS iPhone 6 </a> by Sam R (<a href='http://codepen.io/samratcliffe'>@samratcliffe</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
