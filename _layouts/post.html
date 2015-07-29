@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+
+{% if page.fullwidthcodepen %}
+<iframe height='{{ page.fullwidthcodepenheight }}' scrolling='no' src='{{ page.fullwidthcodepen }}' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
+{% endif %}
 <div class="wrapper">
 	<div class="post">
 
