@@ -6,7 +6,7 @@ categories: jekyll update
 image: "/images/test.jpg"
 ---
 
-<iframe height='268' scrolling='no' src='//codepen.io/samratcliffe/embed/JdeWLr/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/samratcliffe/pen/JdeWLr/'>Photorealistic CSS iPhone 6 </a> by Sam R (<a href='http://codepen.io/samratcliffe'>@samratcliffe</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='268' scrolling='no' src='//codepen.io/samratcliffe/embed/JdeWLr/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 600px; margin-left:-100px;'>See the Pen <a href='http://codepen.io/samratcliffe/pen/JdeWLr/'>Photorealistic CSS iPhone 6 </a> by Sam R (<a href='http://codepen.io/samratcliffe'>@samratcliffe</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
