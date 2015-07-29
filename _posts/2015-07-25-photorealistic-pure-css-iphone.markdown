@@ -19,10 +19,9 @@ The structure of the iPhone is built with a series of nested `div`s, each with a
 <img src="/images/iphone-structure.jpg">
 
 ## Highlights
-<img src="/images/iphone-closeup.jpg">
-
 Pseudo-elements are a powerful tool for adding fine detail while keeping your HTML clean and semantic. Highlights were added to the side buttons and camera lens:
 
 <p data-height="268" data-theme-id="17355" data-slug-hash="aOQyPL" data-default-tab="result" data-user="samratcliffe" class='codepen'>See the Pen <a href='http://codepen.io/samratcliffe/pen/aOQyPL/'>aOQyPL</a> by Sam R (<a href='http://codepen.io/samratcliffe'>@samratcliffe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
+<img src="/images/iphone-closeup.jpg">
