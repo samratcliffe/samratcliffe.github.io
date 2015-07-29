@@ -14,32 +14,15 @@ One of the greatest challenges as a front-end developer is letting your markup d
 This CSS iPhone accommodates screenshots in a simple HTML `img` tag. The gradients, reflections and transparency are all handled by the CSS, greatly reducing network calls and bandwidth. Let's take a look at some of the code.
 
 ## Structure
-The structure of the iPhone is built with a series of nested `div`s, each with a large `border-radius` and a bit of padding. On the face of the device we have three `inline-block` elements, comprising the camera, the screen, and the home button. 
+The structure of the iPhone is built with a series of nested `div`s, each with a large `border-radius` and a bit of padding. On the face of the device we have three `inline-block` elements, comprising the camera, the screen, and the home button.
+
 <img src="/images/iphone-structure.jpg">
 
+## Highlights
+<img src="/images/iphone-closeup.jpg">
 
-	<div class="metal-casing">
-		<div class="bezel">
-			<div class="front">
-				<div class="cam-speaker-wrap">
-					<div class="speaker"></div>
-					<div class="camera"></div>
-				</div>
-				<div class="screen">
-				</div>
-				<div class="button-wrap">
-					<div class="button"></div>
-				</div>
-			</div>
-		</div>
-		<div class="vol-buttons">
-			<div class="side-button silent">
-			</div>
-			<div class="side-button volume">
-			</div>
-			<div class="side-button volume">
-			</div>
-		</div>
-		<div class="side-button lock-button">
-		</div>
-	</div>
+Pseudo-elements are a powerful tool for adding fine detail while keeping your HTML clean and semantic. Highlights were added to the side buttons and camera lens:
+
+<p data-height="268" data-theme-id="17355" data-slug-hash="aOQyPL" data-default-tab="result" data-user="samratcliffe" class='codepen'>See the Pen <a href='http://codepen.io/samratcliffe/pen/aOQyPL/'>aOQyPL</a> by Sam R (<a href='http://codepen.io/samratcliffe'>@samratcliffe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
