@@ -16,7 +16,20 @@ This CSS iPhone accommodates screenshots in a simple HTML `img` tag. The gradien
 ## Structure
 The structure of the iPhone is built with a series of nested `div`s, each with a large `border-radius` and a bit of padding. On the face of the device we have three `inline-block` elements, comprising the camera, the screen, and the home button.
 
-<img src="/images/iphone-structure.jpg">
+    <div class="wrap">
+      <div class="metal-casing">
+        <div class="bezel">
+          <div class="front">
+            <div class="cam-speaker-wrap">
+            </div>
+            <div class="screen">
+            </div>
+            <div class="button-wrap">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 ## Highlights
 Pseudo-elements are a powerful tool for adding graphic details while keeping your HTML clean and semantic. Highlights were added to the side buttons and camera lens:
