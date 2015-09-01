@@ -93,7 +93,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        /*color: darken($brand-color, 15%);*/
     }
 
     &:hover {
@@ -127,10 +127,12 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 13px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    tab-size:4;
+    -moz-tab-size: 4;
+    -o-tab-size: 4; 
 }
 
 code {
@@ -139,7 +141,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;
