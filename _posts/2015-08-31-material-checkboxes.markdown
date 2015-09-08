@@ -24,7 +24,7 @@ div
     +c("The Donald")
 ```
 
-### Your CSS
+### And also some CSS
 ```
 /* Hide the checkbox itself */
 input[type='checkbox'] {

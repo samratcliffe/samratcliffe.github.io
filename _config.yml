@@ -1,8 +1,7 @@
 # Site settings
 title: samratcliffe
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  I am a web developer based out of Washington, D.C.
+description: "I'm a dev from the southern hemisphere but living in the northern. I make interactive web components and a mean spaghetti bolognese. I think a lot about the perfect burger. This site is a motley crew of things I'm working on or thinking about."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://samratcliffe.github.io" # the base hostname & protocol for your site
 github_username:  samratcliffe

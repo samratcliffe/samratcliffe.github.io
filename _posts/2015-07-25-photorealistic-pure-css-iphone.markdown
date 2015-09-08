@@ -6,9 +6,10 @@ image: "/images/iphone-closeup.jpg"
 fullwidthcodepen: "//codepen.io/samratcliffe/embed/JdeWLr/?height=500&theme-id=17355&default-tab=result"
 fullwidthcodepenheight: "500"
 ---
+I made an iPhone. Here's how:
 
 ## Structure
-The structure of the iPhone is built with a series of nested `div`s, each with a large `border-radius` and a bit of padding. On the face of the device we have three `inline-block` elements, comprising the camera, the screen, and the home button.
+The structure is heaps simpler than it looks. It's built with a series of nested `div`s, each with a large `border-radius` and a bit of padding. On the face of the device we have three `inline-block` elements, comprising the camera, the screen, and the home button.
 
 	<div class="wrap">
 		<div class="metal-casing">
@@ -27,7 +28,7 @@ The structure of the iPhone is built with a series of nested `div`s, each with a
 
 
 ## Highlights
-Pseudo-elements are a powerful tool for adding graphic details while keeping your HTML clean and semantic. Highlights were added to the side buttons and camera lens:
+Pseudo-elements are your friend. They're such a powerful tool for adding graphic details while keeping your HTML clean and semantic. Highlights for side buttons and camera lens:
 
 <p data-height="268" data-theme-id="17355" data-slug-hash="aOQyPL" data-default-tab="result" data-user="samratcliffe" class='codepen'>See the Pen <a href='http://codepen.io/samratcliffe/pen/aOQyPL/'>aOQyPL</a> by Sam R (<a href='http://codepen.io/samratcliffe'>@samratcliffe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -35,7 +36,7 @@ Pseudo-elements are a powerful tool for adding graphic details while keeping you
 <img src="/images/iphone-closeup.jpg">
 
 ## Animation
-A bit of CSS animation can bring the phone to life. The wrapper is given a very simple `rotate3d()` transform around the y axis.
+A bit of CSS animation can bring the phone to life. The wrapper div is given a very simple `rotate3d()` transform around the y axis.
 
 	@keyframes swing {
 		0% {
@@ -54,7 +55,7 @@ A bit of CSS animation can bring the phone to life. The wrapper is given a very 
 	  animation-iteration-count: infinite;
 	}
 
-The reflection is given another rotation in the opposite direction:
+The reflection is given another rotation in the opposite direction to make the lighting look more striking:
 
 	@keyframes reflectShift {
 		0% {
@@ -72,3 +73,5 @@ The reflection is given another rotation in the opposite direction:
 	  animation-duration: 4s;
 	  animation-iteration-count: infinite;
 	}
+
+And that's basically it. Take a look at the codepen for more info.
