@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue.eot?') format('eot'), url('../fonts/BebasNeue.woff') format('woff'), url('../fonts/BebasNeue.ttf') format('truetype');
+}
+body {
+	font-family: "Roboto Slab"
+}
+
+/* ============================ */
+/* Header						*/
+/* ============================ */
+.header {
+	box-shadow: 0 0px 1em 0px #DFDFDF;
+	background:#fff;
+	position: relative;
+	width:100%;
+	z-index: 1;
+}
+.header-maxwidth {
+	width:97%;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: table;
+}
+.header-maxwidth>nav,.header-maxwidth>.header-logo {
+	display: table-cell;
+	vertical-align: middle;
+}
+.header-logo {
+	width:7%;
+}
+.header-logo a {
+	display: block;
+	background: url("../images/logo.png") no-repeat center;
+	background-size: contain;
+	padding-bottom:82%; /* aspect ratio of logo */
+}
+.header nav {
+	width:93%;
+	text-align: right;
+}
+.header nav ul li {
+	display: inline-block;
+	padding: 1em 0 1em 1em;
+	font-family: "Bebas Neue";
+	font-size: 1.5em;
+}
+
+/* ============================ */
+/* Main 						*/
+/* ============================ */
+.main-section {
+	background:#f9f9f9;
+	position: relative;
+}
+.right-col {
+	position: fixed;
+	top:0;
+	right:0;
+	width:38.196%;
+	height:100%;
+	background:black;
+}
+.left-col {
+	margin-right: 38.196%;
+	padding:3%;
+}
+.main-section h1 {
+	font-family: "Bebas Neue";
+	font-size: 2.75em;
+}
+.main-section p {
+    padding: 0.5em 0 1em 0;
+}
+.main-section form {
+    padding-left: 7%;
+}
+.main-section label {
+    text-transform: uppercase;
+    width: 30%;
+    max-width:160px;
+    display: inline-block;
+    line-height: 3em;
+}
+.main-section input[type="range"] {
+    width: 60%;
+}
+.main-section .next-btn {
+    text-align: right;
+}
+.main-section .next-btn a {
+    display: inline-block;
+    background: #00af2c;
+    color: #fff;
+    padding: 0.7em;
+    width: 9em;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0.5em;
+    transition: background 0.3s;
+}
+.main-section .next-btn a:hover {
+	background:#009f1c;
+}
+
+/* ============================ */
+/* Footer						*/
+/* ============================ */
+.footer {
+	background: #454c58;
+	color:#fff;
+	font-size: 0.75em;
+	z-index: 1;
+	position: relative;
+}
+.footer-maxwidth {
+	width:97%;
+	max-width: 1280px;
+	margin: 0 auto;
+	display:table;
+}
+.footer-trademark, .footer-legals {
+	display: table-cell;
+	width:50%;
+}
+.footer-legals {
+	text-align: right;
+}
+.footer-legals ul li {
+	display: inline-block;
+	padding:1.8em 0 1.8em 2em;
+}
+.footer-legals ul li a {
+	text-decoration: none;
+}
+.footer-legals ul li a:hover {
+	text-decoration: underline;
+}
