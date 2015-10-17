@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('../fonts/BebasNeue.eot?') format('eot'), url('../fonts/BebasNeue.woff') format('woff'), url('../fonts/BebasNeue.ttf') format('truetype');
+  src: url('../fonts/bebasneue.eot?') format('eot'), url('../fonts/bebasneue.woff') format('woff'), url('../fonts/bebasneue.ttf') format('truetype');
 }
 body {
 	font-family: "Roboto Slab"
