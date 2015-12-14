@@ -7,8 +7,20 @@
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="scripts/denims.js"></script>
+		<script src="scripts/custom.js"></script>
 	</head>
 	<body>
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2WQ9T"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-N2WQ9T');</script>
+		<!-- End Google Tag Manager -->
 		<div class="header">
 			<div class="header-maxwidth">
 				<div class="header-logo">
@@ -25,20 +37,95 @@
 			</div>
 		</div>
 		<div class="main-section">
-			<div class="left-col">
-				<h1>Measurements</h1>
-				<p>Tell us how you want your jeans to fit.</p>
-				<form name="measurements">
-					<label for="waist">Waist</label><input type="range" id="waist" min="28" max="40" value="32" step="1"><br>
-					<label for="inseam">Inseam</label><input type="range" id="inseam" min="28" max="36" value="32"  step="1"><br>
-					<label for="thigh">Thigh</label><input type="range" id="thigh" min="12" max="14" value="12"  step="0.5"><br>
-					<label for="leg-opening">Leg Opening</label><input type="range" id="leg-opening" min="6" max="9" value="7" step="0.25"><br>
-				</form>
-				<div class="next-btn">
-					<a href="javascript:void(0)">NEXT</a>
+			<div class="progress">
+				<ul>
+					<li><p>1. Cut</p></li>
+					<li><p>2. Denim</p></li>
+					<li><p>3. Thread</p></li>
+					<li><p>4. Waist</p></li>
+					<li><p>5. Inseam</p></li>
+					<li><p>6. Overview</p></li>
+				</ul>
+			</div>
+			<div class="design-1">
+				<div class="cut-intro">
+					<h1>1. Select Your Cut</h1>
+					<p>Scouts&reg; Jeans use a wide Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="cut-wrapper">
+					<ul>
+						<li>
+							<div></div>
+							<div>
+								<img />
+								<p>Our tapered, more mordern look. Sits below the waist. Edged from hip through knee for a cut that is tailored, but not skinny. </p>
+								<a href="javascript:void(0)" title="Continue" data-cut="fitzroy">Continue</a>
+							</div>
+						</li><!--
+						--><li>
+							<div>
+								<img />
+								<p>A more traditional cut. The Lygon St. is a timeless look with more room to move in.  </p>
+								<a href="javascript:void(0)" title="Continue" data-cut="lygonst">Continue</a>
+							</div>
+							<div></div>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="right-col">
+			<div class="design-2" style="display:none;">
+				<div class="left-col">
+					<div class="design-screen">
+						<h1>2. Select your denim.</h1>
+						<p>Pick the fabric we'll cut your jeans with.</p>
+						<div class="denim-select">
+							<!-- append denims here -->
+						</div>
+						<div class="next-btn">
+							<a href="javascript:void(0)">NEXT</a>
+						</div>
+					</div>
+					<div class="design-screen">
+						<h1>2. Choose your thread.</h1>
+						<p>Tell us how you want your jeans to fit.</p>
+						<form name="measurements">
+							<label for="waist">Waist</label><input type="range" id="waist" min="28" max="40" value="32" step="1"><br>
+							<label for="inseam">Inseam</label><input type="range" id="inseam" min="28" max="36" value="32"  step="1"><br>
+							<label for="thigh">Thigh</label><input type="range" id="thigh" min="12" max="14" value="12"  step="0.5"><br>
+							<label for="leg-opening">Leg Opening</label><input type="range" id="leg-opening" min="6" max="9" value="7" step="0.25"><br>
+						</form>
+						<div class="next-btn">
+							<a href="javascript:void(0)">NEXT</a>
+						</div>
+					</div>
+					<div class="design-screen">
+						<h1>3. Measurements</h1>
+						<p>Tell us how you want your jeans to fit.</p>
+						<form name="measurements">
+							<label for="waist">Waist</label><input type="range" id="waist" min="28" max="40" value="32" step="1"><br>
+							<label for="inseam">Inseam</label><input type="range" id="inseam" min="28" max="36" value="32"  step="1"><br>
+							<label for="thigh">Thigh</label><input type="range" id="thigh" min="12" max="14" value="12"  step="0.5"><br>
+							<label for="leg-opening">Leg Opening</label><input type="range" id="leg-opening" min="6" max="9" value="7" step="0.25"><br>
+						</form>
+						<div class="next-btn">
+							<a href="javascript:void(0)">NEXT</a>
+						</div>
+					</div>
+				</div>
+				<div class="right-col">
+				</div>
+			</div>
+			<div class="product-form-wrap" style="display:none;">
+				<form id="product-form">
+					<input type="hidden" name="cut" value="">
+					<input type="hidden" name="denim" value="">
+					<input type="hidden" name="thread" value="">
+					<input type="hidden" name="waist" value="">
+					<input type="hidden" name="inseam" value="">
+					<input type="hidden" name="leg-opening" value="">
+					<input type="hidden" name="thigh" value="">
+					<input type="hidden" name="rise" value="">
+				</form>
 			</div>
 		</div>
 		<div class="footer">

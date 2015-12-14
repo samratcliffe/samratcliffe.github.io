@@ -46,3 +46,8 @@ a {
 	color:inherit;
 	text-decoration: none;
 }
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+input[type=range]::-moz-focus-outer {
+    border: 0;
+    }
