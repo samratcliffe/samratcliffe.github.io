@@ -2,29 +2,30 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Scouts Jeans&reg; - Custom tailored denim</title>
+		<title>Static Jeans&reg; - Custom tailored denim</title>
 		<link rel="stylesheet" type="text/css" href="styles/reset.css">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="scripts/denims.js"></script>
+		<script src="scripts/threads.js"></script>
 		<script src="scripts/custom.js"></script>
 	</head>
 	<body>
 		<!-- Google Tag Manager -->
-		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2WQ9T"
+<!--		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2WQ9T"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-N2WQ9T');</script>
+		})(window,document,'script','dataLayer','GTM-N2WQ9T');</script> -->
 		<!-- End Google Tag Manager -->
 		<div class="header">
 			<div class="header-maxwidth">
 				<div class="header-logo">
-					<a href="/jeans" title="Scouts Jeans"></a>
+					<a href="/jeans" title="Static Jeans"></a>
 				</div>
 				<nav>
 					<ul>
@@ -50,25 +51,25 @@
 			<div class="design-1">
 				<div class="cut-intro">
 					<h1>1. Select Your Cut</h1>
-					<p>Scouts&reg; Jeans use a wide Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Static&reg; Jeans use high-quality raw selvedge denim. Look through our swatches and choose a fabric for your jeans.</p>
 				</div>
 				<div class="cut-wrapper">
 					<ul>
 						<li>
-							<div></div>
-							<div>
+							<div class="cut-image"></div>
+							<div class="cut-description">
 								<img />
 								<p>Our tapered, more mordern look. Sits below the waist. Edged from hip through knee for a cut that is tailored, but not skinny. </p>
-								<a href="javascript:void(0)" title="Continue" data-cut="fitzroy">Continue</a>
+								<a href="javascript:void(0)" title="Continue" data-cut="fitzroy">CHOOSE DENIM</a>
 							</div>
 						</li><!--
 						--><li>
-							<div>
+							<div class="cut-description">
 								<img />
 								<p>A more traditional cut. The Lygon St. is a timeless look with more room to move in.  </p>
-								<a href="javascript:void(0)" title="Continue" data-cut="lygonst">Continue</a>
+								<a href="javascript:void(0)" title="Continue" data-cut="lygonst">CHOOSE DENIM</a>
 							</div>
-							<div></div>
+							<div class="cut-image"></div>
 						</li>
 					</ul>
 				</div>
@@ -77,60 +78,248 @@
 				<div class="left-col">
 					<div class="design-screen">
 						<h1>2. Select your denim.</h1>
-						<p>Pick the fabric we'll cut your jeans with.</p>
+						<p>Static&reg; Jeans use high-quality raw selvedge denim. Look through our swatches and choose a fabric for your jeans.</p>
 						<div class="denim-select">
 							<!-- append denims here -->
 						</div>
-						<div class="next-btn">
-							<a href="javascript:void(0)">NEXT</a>
+						<div class="navigation-buttons">
+							<div class="next-btn">
+								<a href="javascript:void(0)">CONTINUE</a>
+							</div>
 						</div>
 					</div>
+
 					<div class="design-screen">
 						<h1>2. Choose your thread.</h1>
-						<p>Tell us how you want your jeans to fit.</p>
-						<form name="measurements">
-							<label for="waist">Waist</label><input type="range" id="waist" min="28" max="40" value="32" step="1"><br>
-							<label for="inseam">Inseam</label><input type="range" id="inseam" min="28" max="36" value="32"  step="1"><br>
-							<label for="thigh">Thigh</label><input type="range" id="thigh" min="12" max="14" value="12"  step="0.5"><br>
-							<label for="leg-opening">Leg Opening</label><input type="range" id="leg-opening" min="6" max="9" value="7" step="0.25"><br>
-						</form>
-						<div class="next-btn">
-							<a href="javascript:void(0)">NEXT</a>
+						<p>We use high-strength Coats&reg; thread on our seams.</p>
+						<div class="thread-select">
+							<!-- append threads here -->
+						</div>
+						<div class="navigation-buttons">
+							<div class="prev-btn">
+								<a href="javascript:void(0)">BACK</a>
+							</div>
+							<div class="next-btn">
+								<a href="javascript:void(0)">CONTINUE</a>
+							</div>
 						</div>
 					</div>
 					<div class="design-screen">
-						<h1>3. Measurements</h1>
-						<p>Tell us how you want your jeans to fit.</p>
-						<form name="measurements">
-							<label for="waist">Waist</label><input type="range" id="waist" min="28" max="40" value="32" step="1"><br>
-							<label for="inseam">Inseam</label><input type="range" id="inseam" min="28" max="36" value="32"  step="1"><br>
-							<label for="thigh">Thigh</label><input type="range" id="thigh" min="12" max="14" value="12"  step="0.5"><br>
-							<label for="leg-opening">Leg Opening</label><input type="range" id="leg-opening" min="6" max="9" value="7" step="0.25"><br>
+						<h1>3. Make it fit nice.</h1>
+						<p>We cut your jeans to your measurements. Let's start with your waist. </p>
+						<form name="measurements-waist">
+							<label for="waist"><span class="title">Waist </span><input type="range" id="waist" min="28" max="42" value="32" step="1"><span class="value">32</span></label><br>
 						</form>
-						<div class="next-btn">
-							<a href="javascript:void(0)">NEXT</a>
+						<div class="navigation-buttons">
+							<div class="prev-btn">
+								<a href="javascript:void(0)">BACK</a>
+							</div>
+							<div class="next-btn">
+								<a href="javascript:void(0)">CONTINUE</a>
+							</div>
 						</div>
+					</div>
+					<div class="design-screen">
+						<h1>4. The Perfect Length</h1>
+						<p> Tell us how long you want your pants. Add a couple inches if you like to roll or cuff the hem.</p>
+						<form name="measurements-inseam">
+							<label for="inseam"><span class="title">Inseam </span><input type="range" id="inseam" min="28" max="36" value="34"  step="1"><span class="value">34</span><span class="desc">REGULAR</span></label><br>
+						</form>
+						<div class="navigation-buttons">
+							<div class="prev-btn">
+								<a href="javascript:void(0)">BACK</a>
+							</div>
+							<div class="next-btn">
+								<a href="javascript:void(0)">CONTINUE</a>
+							</div>
+						</div>
+					</div>
+					<div class="design-screen">
+						<h1>5. The Perfect Fit.</h1>
+						<p>If you want precise measurements, we can do that for you. Or not. We recommend you stick with the default cut.  </p>
+						<form name="measurements-tailor">
+							<label for="thigh"><span class="title">Thigh </span><input type="range" id="thigh" min="10.5" max="13" value="12"  step="0.25"><span class="value">13</span><span class="desc">RECEOMMENDED</span></label><br>
+							<label for="leg-opening"><span class="title">Leg Opening </span><input type="range" id="leg-opening" min="6.25" max="8" value="7" step="0.25"><span class="value">7</span><span class="desc">RECOMMENDED</span></label><br>
+							<div class="advanced-sizing-container" style="display:none">
+								<label for="front-rise"><span class="title">Front Rise </span><input type="range" id="front-rise" min="10.25" max="11.5" value="10.75" step="0.25"><span class="value">10.75</span></label><br>
+								<label for="back-rise"><span class="title">Back Rise </span><input type="range" id="back-rise" min="6" max="9" value="7" step="0.25"><span class="value">7</span></label><br>
+							</div>
+							<p><a class="advanced-sizing" href="javascript:void(0)">Advanced Sizing...</a><p>
+						</form>
+						<div class="navigation-buttons">
+							<div class="prev-btn">
+								<a href="javascript:void(0)">BACK</a>
+							</div>
+							<div class="next-btn">
+								<a href="javascript:void(0)">CONTINUE</a>
+							</div>
+						</div>
+					</div>
+					<div class="design-screen">
+						<h1>Nearly there...</h1>
+						<p>Sign up for Static&reg; email offers and <strong>save 20% on this pair</strong>. No kidding.</p>
+						<form name="email-signup">
+							<label>Email: <input id="email-signup" placeholder="me@example.com"></label><br>
+							<div class="manual-promocode" style="display:none">
+								<label>Enter your promo code<input id="promocode-input"></label><br>
+							</div>
+							<p><a class="manual-promocode-link" href="javascript:void(0)">I want to put in a promocode manually</a><p>
+						</form>
+						<div class="navigation-buttons">
+							<div class="prev-btn">
+								<a href="javascript:void(0)">BACK</a>
+							</div>
+							<div class="next-btn">
+								<a href="javascript:void(0)">CONTINUE</a>
+							</div>
+						</div>
+					</div>
+					<div class="design-screen">
+						<h1>6. All done</h1>
+						<p>Tell us how you want your jeans to fit. Start with your waist. </p>
+						<div class="purchase-item">
+							<div class="item-img"></div>
+							<div class="item-desc">
+								<p class="item-title">Static&reg Custom Shop Jeans</p>
+								<p>
+									<strong>Cut: </strong><span>Fitzroy</span><br>
+									<strong>Denim: </strong><span>Dark Raw</span><br>
+									<strong>Thread: </strong><span>Copper</span><br>
+									<strong>Measurements: </strong><span>34W 34L 7Th 10.5LO</span><br>
+									<a href="javascript:void(0)">Edit</a>
+								</p>
+							</div>
+							<div class="item-price"><span class="strikethrough"><sup>$</sup>299</span> <span class="price"><sup>$</sup>149</span></div>
+						</div>
+						<p class="your-email"><strong>Email: </strong><span>test@test.com</span> <a>Change email address</a></p>
+						<div class="navigation-buttons">
+							<form action="https://www.scoutsjeans.com/charge" method="POST" id="product-form">
+								<script
+									src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+									data-key="pk_test_qkBd60gYwVJrKPMlUCv4omFJ"
+									data-image="/img/documentation/checkout/marketplace.png"
+									data-email="taaaaest@scoutsjeans.com"
+									data-shipping-address="false"
+									data-billing-address="false"
+									data-zip-code="true"
+									data-name="Scouts Jeans"	
+									data-label="Checkout"
+									data-panel-label="Pay {{amount}}"
+									data-description="JEans"
+									data-amount="14900"
+									data-locale="auto">
+								</script>
+								<input type="hidden" name="sku" value="10001">
+								<input type="hidden" name="price" value="7450">
+								<input type="hidden" name="promoCode" value="MATESRATES">
+								<input type="hidden" name="cut" value="">
+								<input type="hidden" name="denim" value="">
+								<input type="hidden" name="thread" value="">
+								<input type="hidden" name="waist" value="">
+								<input type="hidden" name="inseam" value="">
+								<input type="hidden" name="leg-opening" value="">
+								<input type="hidden" name="thigh" value="">
+								<input type="hidden" name="rise" value="">
+							</form>
+						</div>
+						<img class="cards" src="images/cards-accepted.png">
+						<div class="guarantees">
+							<div>
+								<div class="g-img">
+									<img src="images/guarantee.png">
+								</div>
+								<div class="g-description">
+									<h3>Shop with confidence.</h3>
+									<p>We stand by our product. If these aren't the best jeans you've ever worn, return within 60 days and we'll give you 100% of your money back. You can't lose. </p>
+								</div>
+							</div>
+							<div>
+								<div class="g-img">
+									<img src="images/stripe.png">
+								</div>
+								<div class="g-description">
+									<h3>Safe &amp; Secure Transactions</h3>
+									<p>Static Jeans&reg; is committed to assuring your privacy and keeping your information secure. All data on our site is secured with SSL/TLS encryption.</p> 
+								</div>
+							</div> 
+						</div>
+
 					</div>
 				</div>
 				<div class="right-col">
+					<svg width="100%" height="100%" viewBox="0 0 1024 894" preserveAspectRatio="xMidYMid slice" id="jeans-preview">
+						<defs>
+							<filter id="denim-charcoal">
+								<feColorMatrix type="saturate" values="0"/>
+								<feComponentTransfer>
+									<feFuncR type="linear" slope="1.5"/>
+									<feFuncG type="linear" slope="1.5"/>
+									<feFuncB type="linear" slope="1.5"/>
+								</feComponentTransfer>
+							</filter>
+							<filter id="denim-indigo">
+								<feComponentTransfer>
+									<feFuncR type="linear" slope="0.8"/>
+									<feFuncG type="linear" slope="0.8"/>
+									<feFuncB type="linear" slope="0.8"/>
+								</feComponentTransfer>
+								<feColorMatrix type="saturate" values="1"/>
+							</filter>
+							<filter id="denim-black">
+								<feComponentTransfer>
+									<feFuncR type="linear" slope="0.3"/>
+									<feFuncG type="linear" slope="0.3"/>
+									<feFuncB type="linear" slope="0.3"/>
+								</feComponentTransfer>
+								<feColorMatrix type="saturate" values="0"/>
+							</filter>
+							<filter id="thread-black">
+								<feComponentTransfer>
+									<feFuncR type="linear" slope="0.2"/>
+									<feFuncG type="linear" slope="0.2"/>
+									<feFuncB type="linear" slope="0.2"/>
+								</feComponentTransfer>
+								<feColorMatrix type="saturate" values="0"/>
+							</filter>
+							<filter id="thread-copper">
+								<feColorMatrix type="saturate" values="1"/>
+							</filter>
+							<filter id="thread-yellow">
+								<feColorMatrix type="saturate" values="2"/>
+								<feColorMatrix type="hueRotate" values="15"/>
+							</filter>
+							<filter id="thread-white">
+								<feColorMatrix type="saturate" values="0"/>
+								<feComponentTransfer>
+									<feFuncR type="linear" slope="1.5"/>
+									<feFuncG type="linear" slope="1.5"/>
+									<feFuncB type="linear" slope="1.5"/>
+								</feComponentTransfer>
+							</filter>
+							<filter id="thread-indigo">
+								<feColorMatrix type="hueRotate" values="180"/>
+								<feComponentTransfer>
+									<feFuncR type="linear" slope="0.5"/>
+									<feFuncG type="linear" slope="0.5"/>
+									<feFuncB type="linear" slope="0.5"/>
+								</feComponentTransfer>
+							</filter>
+						</defs>
+						<image xlink:href="images/base.png" x="0" y="0" height="1024" width="894" />
+						<image id="svg-denim" xlink:href="images/denim.png" x="0" y="0" height="1024" width="894" filter="url(#denim-black)"/>
+						<image id="svg-thread" xlink:href="images/thread.png" x="0" y="0" height="1024" width="894" filter="url(#thread-indigo)"/>
+					</svg>
 				</div>
 			</div>
 			<div class="product-form-wrap" style="display:none;">
-				<form id="product-form">
-					<input type="hidden" name="cut" value="">
-					<input type="hidden" name="denim" value="">
-					<input type="hidden" name="thread" value="">
-					<input type="hidden" name="waist" value="">
-					<input type="hidden" name="inseam" value="">
-					<input type="hidden" name="leg-opening" value="">
-					<input type="hidden" name="thigh" value="">
-					<input type="hidden" name="rise" value="">
+				<form >
+
 				</form>
 			</div>
 		</div>
 		<div class="footer">
 			<div class="footer-maxwidth">
-				<div class="footer-trademark">© 2015 Scouts Jeans Ltd. All Rights Reserved.</div>
+				<div class="footer-trademark">© 2015 Static Jeans Ltd. All Rights Reserved.</div>
 				<div class="footer-legals">
 					<ul>
 						<li><a href="#">Agreements</a></li>

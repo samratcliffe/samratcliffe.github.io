@@ -102,8 +102,9 @@ body {
 }
 .design-1 .cut-wrapper ul li div {
 	display: inline-block;
-	width:49%;
+	vertical-align: middle;
 }
+
 .design-1 .cut-wrapper ul li a {
 	display: block;
 	padding:0.9em;
@@ -116,13 +117,31 @@ body {
 .design-1 .cut-wrapper ul li a:hover {
 	background: #009f1c;
 }
+.design-1 .cut-wrapper li div.cut-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 61%;
+    width:55%;
+}
+.design-1 .cut-wrapper ul li div.cut-description {
+	width:44%;
+}
+.design-1 .cut-wrapper li:first-child div.cut-image {
+    background-image: url(../images/fitzroy.png);
+    background-position: right;
+}
+.design-1 .cut-wrapper li:last-child div.cut-image {
+    background-image: url(../images/lygonst.png);
+    background-position: left;
+}
 .right-col {
 	position: fixed;
 	top:0;
 	right:0;
 	width:38.196%;
 	height:100%;
-	background:#ddd;
+	background:url("../images/cut-bg.jpg") no-repeat top;
+	background-size: 100% 100%;
 }
 .left-col {
 	margin-right: 38.196%;
@@ -151,6 +170,14 @@ body {
 	box-sizing: border-box;
 	left: 100%;
 }
+.left-col .design-screen p a {
+	font-weight: bold;
+	color:#00af2c;
+	text-decoration: underline;
+}
+.left-col .design-screen p a:hover {
+	text-decoration: none;
+}
 .main-section h1 {
 	font-family: "Bebas Neue";
 	font-size: 2.75em;
@@ -163,30 +190,61 @@ body {
 }
 .main-section label {
     text-transform: uppercase;
-    width: 30%;
-    max-width:160px;
+    width:100%;
     display: inline-block;
     line-height: 3em;
+}
+.main-section label * {
+    vertical-align: middle;
+}
+.main-section label span.title {
+
+}
+
+.main-section label span.value {
+    font-size: 1.5em;
+    margin-left:0.5em;
+    color:#00af2c;
+}
+.main-section label span.desc {
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+.main-section label span.value::after {
+    content:'"';
 }
 .main-section input[type="range"] {
     width: 60%;
 }
-.main-section .next-btn {
-    text-align: right;
+.main-section .navigation-buttons {
+	text-align: right;
 }
-.main-section .next-btn a {
+.main-section .navigation-buttons div {
+	display: inline-block;
+}
+.main-section .navigation-buttons div a {
     display: inline-block;
-    background: #00af2c;
     color: #fff;
-    padding: 0.7em;
+    padding: 0.9em;
     width: 9em;
     text-align: center;
     font-weight: 700;
     margin-top: 0.5em;
     transition: background 0.3s;
+    margin-left: 0.5em;
+}
+.main-section .next-btn a {
+	background:#00af2c;
 }
 .main-section .next-btn a:hover {
 	background:#009f1c;
+}
+.main-section .prev-btn a {
+    background: #c6c6c6;
+}
+.main-section .prev-btn a:hover {
+	background:#b6b6b6;
 }
 /*Slider */
 input[type=range] {
@@ -265,7 +323,7 @@ input[type=range]::-ms-thumb {
   height: 36px;
   width: 36px;
   border-radius: 36px;
-  background: url("../images/slider-thumb.png");
+  background-image: url("../images/slider-thumb.png");
   background-size: contain;
   cursor: pointer;
   height: 5px;
@@ -310,67 +368,50 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* ============================ */
-/* Denim Select					*/
+/* Denim/Thread Select					*/
 /* ============================ */
-.denim-option {
+.img-option {
 	display: inline-block;
 	border: 1px solid #aaa;
-	box-shadow: 0px 5px 10px #ddd;
 	width: 29%;
 	margin: 1em 1%;
 	vertical-align: top;
 	position: relative;
-    transition: transform 0.2s;
+    transition: box-shadow 0.3s;
+    box-sizing:border-box;
 }
-.denim-option:not(.sold-out):hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    transform: scale(1.02);
-    transition: transform 0.3s;
+
+.img-option:not(.sold-out):not(.selected):hover {
+	box-shadow: 0px 5px 10px #ccc;
 }
-.denim-option.sold-out {
+.img-option.sold-out {
 	opacity: 0.5;
 }
-.denim-option.popular h2::after {
+.img-option.popular h2::after {
     content: " POPULAR";
     font-size: 0.4em;
     color: #B07C4B;
     font-family: Roboto Slab;
     font-weight: 700;
 }
-.denim-option .denim-img {
+.img-option .product-img {
     background: url("../images/dark-blue.jpg") no-repeat center;
     background-size: cover;
     padding-bottom: 67%;
     border-bottom: 1px solid #aaa;
 }
-.denim-option .description {
+.img-option .description {
     padding: 0.8em 0.5em 0 0.5em;
     line-height: 1;
     box-sizing: border-box;
 }
-.denim-option .description h2 {
+.img-option .description h2 {
     font-family: "Bebas Neue";
     font-size: 1.8em;
 }
-.denim-option .description p {
+.img-option .description p {
     min-height:2em;
 }
-/*.denim-option.sold-out::after {
-    content: "SOLD OUT";
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 200%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(-52deg);
-    text-shadow: -2px 2px 3px rgba(0,0,0,0.4);
-    color: #DA6565;
-    font-family: Bebas Neue;
-    font-size: 4.9em;
-    text-align: center;
-}*/
 .sold-out h2::after {
     content: " SOLD OUT";
     font-family: Roboto Slab;
@@ -378,13 +419,122 @@ input[type=range]:focus::-ms-fill-upper {
     font-weight: 800;
     color: #B40606;
 }
-.denim-option .denim-link {
+.img-option > a {
 	position: absolute;
 	width:100%;
 	height:100%;
 	top:0;
 	left:0;
+	box-sizing:border-box;
 }
+.img-option.selected > a {
+	border: 3px solid #00af2c;
+}
+
+/* ============================ */
+/* Overview			 			*/
+/* ============================ */
+.strikethrough {
+	text-decoration: line-through;
+	color:#a00;
+	font-size: 2em;
+}
+.price {
+	color:#00af2c;
+	font-size: 3em;
+}
+sup {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+strong {
+	font-weight: bold;
+}
+#product-form {
+	padding:0;
+	display: inline-block;
+}
+.guarantees {
+
+}
+.guarantees div {
+	display: inline-block;
+	width:48%;
+	vertical-align: middle;
+}
+.guarantees div div {
+	display: inline-block;
+	width:48%;
+	vertical-align: middle;
+}
+.guarantees div .g-img {
+	width:30%;
+}
+.guarantees div .g-img img {
+	width:100%;
+}
+.guarantees div .g-description {
+	width:65%;
+}
+.guarantees div .g-description h3 {
+	font-weight: bold;
+}
+img.cards {
+    display: block;
+    margin-left: auto;
+    width: 21em;
+    margin: 1em 0 4em auto;
+}
+.purchase-item {
+    border: solid 1px #ddd;
+    font-size: 0.9em;
+}
+.purchase-item div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.purchase-item .item-img {
+    width: 15%;
+    background:url("../images/dark-blue.jpg");
+    background-size: cover;
+    padding-bottom: 14%;
+    margin-right: 2%;
+    opacity: 0.5;
+}
+.purchase-item .item-desc {
+    width: 62%;
+}
+.purchase-item .item-desc .item-title{
+    font-size:1.25em;
+    font-weight: bold;
+}
+.purchase-item .item-price {
+    width: 19%;
+}
+p.your-email {
+	margin:1em 0;
+}
+/* ============================ */
+/* Stripe Checkout btn 			*/
+/* ============================ */
+button.stripe-button-el {
+    background: #00af2c !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+}
+.stripe-button-el span {
+    background: #00af2c !important;
+    border-radius: 0 !important;
+    border: none !important;
+    text-transform: uppercase !important;
+    font-family: Roboto slab !important;
+    width:10em;
+    padding: 0.5em 2em !important;
+    font-size: 1em !important;
+}
+
 /* ============================ */
 /* Footer						*/
 /* ============================ */
